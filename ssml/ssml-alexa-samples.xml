@@ -1,0 +1,54 @@
+<!-- To convert MP3's to be compatible, use this CLI command:
+    ffmpeg -i INPUTFILE -ac 2 -codec:a libmp3lame -b:a 48k -ar 16000 OUTPUTFILE
+-->
+
+<audio src='https://s3.amazonaws.com/my-ssml-samples/cheap_thrills.mp3' />
+<audio src='https://s3.amazonaws.com/my-ssml-samples/Flourish.mp3' />
+
+<speak>
+    I don't trust atoms 
+    <break time="0.7s" />
+    they make up everything. 
+    <break time="0.2s" />
+    <audio src="https://s3.amazonaws.com/my-ssml-samples/Flourish.mp3" /> <!-- mp3 mixed with dialogue -->
+</speak>
+
+<speak>
+    I want to tell you a secret. <!-- regular voice -->
+    <say-as interpret-as="digits">321</say-as>  <!-- 3, 2, 1 -->
+    <break time="0.2s"/>Are you ready? <break time="0.5s"/>  <!-- add a pause -->
+    <amazon:effect name="whispered">This voice is not creepy at all</amazon:effect>  <!-- change tone of voice -->
+    <break time="1s"/>  <!-- add a slightly longer pause -->
+    <say-as interpret-as="interjection">Bazinga!</say-as>  <!-- pre-recorded common interjections, also called speechcons -->
+    <say-as interpret-as="interjection">bon voyage!</say-as>  <!-- pre-recorded common interjections, also called speechcons -->
+</speak>
+
+<prosody rate="x-slow"><amazon:effect name="whispered">This voice is not creepy at all</amazon:effect></prosody>
+
+<prosody volume="x-loud">word</prosody>
+<prosody volume="soft">word</prosody>
+<prosody volume="+6dB">word</prosody>
+
+<prosody pitch="x-high">Hello Frankfurt</prosody>
+<prosody rate="x-slow" pitch="x-low">Hello Frankfurt</prosody>
+
+<prosody pitch="x-high">Voice</prosody><prosody pitch="x-low">Voice</prosody><prosody pitch="high">Voice</prosody><prosody pitch="low"><prosody pitch="medium">Voice</prosody>Voice</prosody>Hamburg
+
+<prosody rate="x-fast">word</prosody>
+<prosody rate="slow">word</prosody>
+<prosody rate="+100%">word</prosody>
+
+
+<speak>
+    You say, <phoneme alphabet="ipa" ph="pə-tāʹtō">potato</phoneme>. 
+    I say, <phoneme alphabet="ipa" ph="ˈpəˈtɑːtəʊ">potato</phoneme>.
+</speak> 
+
+<speak>
+    Normal volume for the first sentence.
+    <prosody volume="x-loud">Louder volume for the second sentence</prosody>.
+    When I wake up, <prosody rate="x-slow">I speak quite slowly</prosody>.
+    I can speak with my normal pitch, 
+    <prosody pitch="x-high"> but also with a much higher pitch </prosody>, 
+    and also <prosody pitch="low">with a lower pitch</prosody>.
+</speak>

@@ -1,0 +1,17 @@
+<!-- To convert MP3's to be compatible, use this CLI command:
+    ffmpeg -i INPUTFILE -ac 2 -codec:a libmp3lame -b:a 48k -ar 16000 OUTPUTFILE
+-->
+
+<speak>
+    <lang xml:lang="de-DE">
+        <amazon:effect name="drc"><prosody rate="slow" pitch="low" volume="loud">Bald ist wieder Weihnachten. Also Geschenke nicht vergessen.<break strength="strong"/>Ich wünsche ein frohes Fest.</prosody></amazon:effect>
+    </lang>
+</speak>
+
+<speak>
+    <amazon:effect name="drc"><prosody rate="slow" pitch="low" volume="loud">Bald ist wieder Weihnachten. Also Geschenke nicht vergessen.<break strength="strong"/>Ich wünsche ein frohes Fest.</prosody></amazon:effect>
+</speak>
+
+<speak>
+    Bald ist wieder Weihnachten.<amazon:effect vocal-tract-length="90%">Also Geschenke nicht vergessen.</amazon:effect><break strength="strong"/>Ich wünsche ein frohes Fest.
+</speak>
