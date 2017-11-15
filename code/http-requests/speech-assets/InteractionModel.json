@@ -1,0 +1,26 @@
+{
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "WhatsUpIntent",
+          "samples": [
+            "wie geht es dir"
+          ],
+          "slots": []
+        }
+      ],
+      "invocationName": "octopus"
+    }
+  }
