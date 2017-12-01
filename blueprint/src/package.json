@@ -1,0 +1,12 @@
+{
+  "name": "blueprint",
+  "version": "1.0.0",
+  "description": "Template for Alexa Skill Lambda Code based on ALexa Skills Kit SDK for Node.js",
+  "main": "index.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.22"
+  },
+  "devDependencies": {},
+  "author": "Sascha Wolter",
+  "license": ""
+}
