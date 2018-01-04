@@ -51,7 +51,8 @@ var handlers = {
 		    this.emit(':responseReady');            
             
         } else {
-            if (this.event.request.intent.confirmationStatus === 'CONFIRMED') {
+            if (this.event.request.intent.confirmationStatus === "NONE" || this.event.request.intent.confirmationStatus === 'CONFIRMED' ) {
+            // if (this.event.request.intent.confirmationStatus === 'CONFIRMED') {
                 console.log(this.event.request.intent.confirmationStatus);
                 var personASlotRaw = this.event.request.intent.slots.personA.value;
                 var personBSlotRaw = this.event.request.intent.slots.personB.value;
