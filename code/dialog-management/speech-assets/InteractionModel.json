@@ -1,0 +1,152 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "WhoShouldIntent",
+        "samples": [
+          "soll das {personA} oder {personB} machen",
+          "soll {personA} oder {personB} das machen",
+          "soll das {personA} machen",
+          "ob das {personA} machen soll",
+          "ob {personA} das machen soll",
+          "soll {personA} das machen",
+          "ob das {personA} oder {personB} machen soll",
+          "ob {personA} oder {personB} das machen soll",
+          "wer soll das machen",
+          "wer das machen soll",
+          "soll es {personA} oder {personB} machen",
+          "soll {personA} oder {personB} es machen",
+          "soll es {personA} machen",
+          "ob es {personA} machen soll",
+          "ob {personA} es machen soll",
+          "soll {personA} es machen",
+          "ob es {personA} oder {personB} machen soll",
+          "ob {personA} oder {personB} es machen soll",
+          "wer soll es machen",
+          "wer es machen soll"
+        ],
+        "slots": [
+          {
+            "name": "personA",
+            "type": "AMAZON.DE_FIRST_NAME",
+            "samples": [
+              "{personA}",
+              "das soll {personA} machen",
+              "{personA} soll das machen",
+              "{personA} soll es machen",
+              "{personA} oder {personB}",
+              "{personA} oder {personB} soll das machen",
+              "das soll {personA} oder {personB} machen",
+              "{personA} oder {personB} soll es machen",
+              "es soll {personA} oder {personB} machen"
+            ]
+          },
+          {
+            "name": "personB",
+            "type": "AMAZON.DE_FIRST_NAME",
+            "samples": [
+              "{personB}",
+              "{personB} soll das machen",
+              "das soll {personB} machen",
+              "{personB} soll es machen",
+              "es soll {personB} machen"
+            ]
+          }
+        ]
+      }
+    ],
+    "invocationName": "mama"
+  },
+  "prompts": [
+    {
+      "id": "Confirm.Intent-WhoShouldIntent",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Sicher, dass du wissen möchtest, ob {personA} oder {personB} das machen soll?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-WhoShouldIntent.IntentSlot-personA",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Nenne einen Namen"
+        }
+      ]
+    },
+    {
+      "id": "Confirm.Intent-WhoShouldIntent.IntentSlot-personA",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "{personA}, richtig?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-WhoShouldIntent.IntentSlot-personB",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Nenne einen weiteren Namen"
+        }
+      ]
+    },
+    {
+      "id": "Confirm.Intent-WhoShouldIntent.IntentSlot-personB",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "{personB}, richtig?"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "intents": [
+      {
+        "name": "WhoShouldIntent",
+        "confirmationRequired": true,
+        "prompts": {
+          "confirmation": "Confirm.Intent-WhoShouldIntent"
+        },
+        "slots": [
+          {
+            "name": "personA",
+            "type": "AMAZON.DE_FIRST_NAME",
+            "elicitationRequired": true,
+            "confirmationRequired": true,
+            "prompts": {
+              "elicitation": "Elicit.Intent-WhoShouldIntent.IntentSlot-personA",
+              "confirmation": "Confirm.Intent-WhoShouldIntent.IntentSlot-personA"
+            }
+          },
+          {
+            "name": "personB",
+            "type": "AMAZON.DE_FIRST_NAME",
+            "elicitationRequired": true,
+            "confirmationRequired": true,
+            "prompts": {
+              "elicitation": "Elicit.Intent-WhoShouldIntent.IntentSlot-personB",
+              "confirmation": "Confirm.Intent-WhoShouldIntent.IntentSlot-personB"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
