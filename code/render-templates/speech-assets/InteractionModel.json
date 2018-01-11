@@ -1,0 +1,109 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.MoreIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NavigateSettingsIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NextIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PageDownIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PageUpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PreviousIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollDownIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollLeftIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollRightIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollUpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "SelectIntent",
+        "samples": [
+          "wähle nummer {item}",
+          "nummer {item}",
+          "öffne {item}",
+          "{item}",
+          "wähle nummer {item} aus",
+          "wähle {item}",
+          "wähle {item} aus"
+        ],
+        "slots": [
+          {
+            "name": "item",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "ShowBodyTemplateIntent",
+        "samples": [
+          "zeige ein Body Template",
+          "zeige Body Template",
+          "zeige Body",
+          "zeige ein Body Template an",
+          "zeige Body Template an",
+          "zeige Body an",
+          "Body",
+          "Body Template",
+          "mit Body",
+          "mit Body Template"
+        ],
+        "slots": []
+      },
+      {
+        "name": "ShowListTemplateIntent",
+        "samples": [
+          "zeige ein Listen Template",
+          "zeige Listen Template",
+          "zeige Liste",
+          "zeige ein Listen Template an",
+          "zeige Listen Template an",
+          "zeige Liste an",
+          "Liste",
+          "Listen Template",
+          "mit Liste",
+          "mit Listen Template"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "templates"
+  }
+}
