@@ -1,4 +1,4 @@
-﻿// Template for Alexa Skill Lambda Code based on ALexa Skills Kit SDK for Node.js
+﻿﻿// Template for Alexa Skill Lambda Code based on ALexa Skills Kit SDK for Node.js
 // Author: Sascha Wolter @saschawolter
 
 const Alexa = require('alexa-sdk');
@@ -49,22 +49,18 @@ const handlers = {
         this.emit(':responseReady');
     },
     'AMAZON.CancelIntent': function () {
-        var speechOutput = 'Hallo.';
-        var reprompt = 'Und nun?'; 
-        this.response.speak(speechOutput).listen('reprompt');
+        var speechOutput = 'Tschüssi.';
+        this.response.speak(speechOutput);
         this.emit(':responseReady');
     },
     'AMAZON.StopIntent': function () {
-        var speechOutput = 'Hallo.';
-        var reprompt = 'Und nun?'; 
-        this.response.speak(speechOutput).listen('reprompt');
+        var speechOutput = 'Hoffentlich bis bald.';
+        this.response.speak(speechOutput);
         this.emit(':responseReady');
     },
     'SessionEndedRequest': function () {
-        var speechOutput = 'Hallo.';
-        this.response.speak(speechOutput);
+        console.log("SessionEndedRequest");
         this.emit(':saveState',true); //uncomment to save attributes to db on session end
-        this.emit(':responseReady');
     },    
     'HelloWorldIntent': function () {
 
