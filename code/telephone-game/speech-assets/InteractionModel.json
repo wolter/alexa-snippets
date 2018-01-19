@@ -1,0 +1,236 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "MESSAGE",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "enzym limousine",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "ungehorsam herold",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "abschnitt zunge",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "vermeiden wohlhabend hand",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "veredelung wasserspeier kollision",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "folge knall obsession",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "randalieren krypta angst hüftknochen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "tor endgültig dichter groß",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "erschwinglich quälend grammophon barbarisch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "amplitude element exquisit signal gesund",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "lotterie metall umgekehrt konsole luft",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "lastkahn schneesturm optimum ehrenamtlich logisch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "entlassung elektrische alarm beste tier molekular",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "programm bluse wunderkerze stark samen ambition",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "guillotine goldbricker badmouth doppeldecker zucker aggressiv",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "kontrast paradiesisch collider bambus vermutet liebhaber seitenschau",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "mutter dekadenz flughafen plasma bakterien druck haunting",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "krieger gefühle alt legendär schneesturm abzug luftdicht",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "milliardär verarbeiten umfangreich daten rage cola schnabel gräueltat",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "umfangreich federgewicht zyanid entsetzlich feinde philosophie wesen neunzehn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "chunk psycho geschwindigkeit leichtsinnig herrschaft plantage zerfallen auseinandersetzung",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Schwarze Katzen kratzen mit scharfen Tatzen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "vogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "zoo",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "auto",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Schwarze Katzen kratzen mit scharfen Tatzen.",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "RecognizeMessageIntent",
+        "samples": [
+          "meine Nachricht ist {message}",
+          "mein Wort ist {message}",
+          "mein Satz ist {message}",
+          "mein Satz {message}",
+          "mein Wort {message}",
+          "meine Nachricht {message}",
+          "meine Nachricht lautet {message}",
+          "mein Wort lautet {message}",
+          "mein Satz lautet {message}",
+          "die Nachricht ist {message}",
+          "die Nachricht lautet {message}",
+          "der Satz ist {message}",
+          "der Satz lautet {message}",
+          "das Wort ist {message}",
+          "das Wort lautet {message}",
+          "mit {message}",
+          "{message}"
+        ],
+        "slots": [
+          {
+            "name": "message",
+            "type": "MESSAGE"
+          }
+        ]
+      }
+    ],
+    "invocationName": "stille post"
+  }
+}
