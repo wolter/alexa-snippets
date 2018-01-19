@@ -4,14 +4,14 @@
 
 <speak>
     <lang xml:lang="de-DE">
-        <amazon:effect name="drc"><prosody rate="slow" pitch="low" volume="loud">Bald ist wieder Weihnachten. Also Geschenke nicht vergessen.<break strength="strong"/>Ich wünsche ein frohes Fest.</prosody></amazon:effect>
+        <amazon:effect name="drc"><prosody rate="slow" pitch="low" volume="loud">Es war dunkel, der Mond schien helle.<break strength="strong"/>Als ein Auto blitzeschnelle langsam um die Ecke fuhr.</prosody></amazon:effect>
     </lang>
 </speak>
 
 <speak>
-    <amazon:effect name="drc"><prosody rate="slow" pitch="low" volume="loud">Bald ist wieder Weihnachten. Also Geschenke nicht vergessen.<break strength="strong"/>Ich wünsche ein frohes Fest.</prosody></amazon:effect>
+    <amazon:effect name="drc"><prosody rate="slow" pitch="low" volume="loud">Es war dunkel, der Mond schien helle.<break strength="strong"/>Als ein Auto blitzeschnelle langsam um die Ecke fuhr.</prosody></amazon:effect>
 </speak>
 
 <speak>
-    Bald ist wieder Weihnachten.<amazon:effect vocal-tract-length="90%">Also Geschenke nicht vergessen.</amazon:effect><break strength="strong"/>Ich wünsche ein frohes Fest.
+    Es war dunkel, <amazon:effect vocal-tract-length="90%">der Mond schien helle.</amazon:effect><break strength="strong"/>Als ein Auto blitzeschnelle langsam um die Ecke fuhr.
 </speak>
