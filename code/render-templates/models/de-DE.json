@@ -1,0 +1,123 @@
+{
+    "languageModel": {
+        "invocationName": "templates",
+        "intents": [
+            {
+                "name": "AMAZON.CancelIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.HelpIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.MoreIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.NavigateSettingsIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.NextIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.PageDownIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.PageUpIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.PreviousIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.ScrollDownIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.ScrollLeftIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.ScrollRightIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.ScrollUpIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.StopIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "SelectIntent",
+                "slots": [
+                    {
+                        "name": "item",
+                        "type": "AMAZON.NUMBER"
+                    }
+                ],
+                "samples": [
+                    "wähle nummer {item}",
+                    "nummer {item}",
+                    "öffne {item}",
+                    "{item}",
+                    "wähle nummer {item} aus",
+                    "wähle {item}",
+                    "wähle {item} aus"
+                ]
+            },
+            {
+                "name": "ShowBodyTemplateIntent",
+                "slots": [],
+                "samples": [
+                    "zeige ein Body Template",
+                    "zeige Body Template",
+                    "zeige Body",
+                    "zeige ein Body Template an",
+                    "zeige Body Template an",
+                    "zeige Body an",
+                    "Body",
+                    "Body Template",
+                    "mit Body",
+                    "mit Body Template"
+                ]
+            },
+            {
+                "name": "ShowListTemplateIntent",
+                "slots": [],
+                "samples": [
+                    "zeige ein Listen Template",
+                    "zeige Listen Template",
+                    "zeige Liste",
+                    "zeige ein Listen Template an",
+                    "zeige Listen Template an",
+                    "zeige Liste an",
+                    "Liste",
+                    "Listen Template",
+                    "mit Liste",
+                    "mit Listen Template"
+                ]
+            }
+        ],
+        "types": []
+    }
+}
